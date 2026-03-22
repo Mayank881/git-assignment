@@ -79,6 +79,7 @@ Grades are assigned based on average marks:
 ---
 
 ## 📸 Output Screenshots
+## IN CASE IF THE IMAGES NOT LOADED THEN YOU CAN SEE THEM IN THE SCREENSHOT FOLDER
 
 ### 🔹 Total Marks Output
 ![Total Marks](/js/Screenshots/total.png)
