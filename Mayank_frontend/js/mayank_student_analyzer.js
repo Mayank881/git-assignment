@@ -93,3 +93,26 @@ function getHighestBySubject() {
 }
 
 getHighestBySubject();
+
+
+console.log("\n average marks for each subject across all students: ");
+// Calculating average marks for each subject across all students
+function getSubjectAverage() {
+  let subjects = ["Math", "English", "Science", "History", "Computer"];
+
+  for (let sub of subjects) {
+    let total = 0;
+
+    for (let student of students) {
+      for (let mark of student.marks) {
+        if (mark.subject === sub) {
+          total += mark.score;
+        }
+      }
+    }
+
+    console.log(`Average ${sub}: ${total / students.length}`);
+  }
+}
+
+getSubjectAverage();
