@@ -116,3 +116,22 @@ function getSubjectAverage() {
 }
 
 getSubjectAverage();
+
+// This function finds the student with highest total marks
+function getTopper() {
+  let highest = 0;
+  let topper = "";
+
+  for (let student of students) {
+    let total = getTotalMarks(student);
+
+    if (total > highest) {
+      highest = total;
+      topper = student.name;
+    }
+  }
+
+  console.log(`\n Class Topper: ${topper} with ${highest} marks`);
+}
+
+getTopper();
