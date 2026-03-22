@@ -135,3 +135,34 @@ function getTopper() {
 }
 
 getTopper();
+
+
+console.log("\n Grades: ");
+// I added grading logic based on average and fail conditions
+function getGrade(student) {
+  let avg = getAverageMarks(student);
+
+  // If any subject is below or equal to 40, student fails
+  for (let mark of student.marks) {
+    if (mark.score <= 40) {
+      return "Fail (Failed in " + mark.subject + ")";
+    }
+  }
+
+  // If attendance is less than 75, student fails
+  if (student.attendance < 75) {
+    return "Fail (Low Attendance)";
+  }
+
+  // Assigning grade based on average
+  if (avg >= 85) return "A";
+  if (avg >= 70) return "B";
+  if (avg >= 50) return "C";
+
+  return "Fail";
+}
+
+// Printing grades
+students.forEach(s => {
+  console.log(s.name + " Grade:", getGrade(s));
+});
