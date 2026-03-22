@@ -166,3 +166,5 @@ function getGrade(student) {
 students.forEach(s => {
   console.log(s.name + " Grade:", getGrade(s));
 });
+// Just added this to make output more readable in console
+console.log("----- Student Performance Report Completed -----");
