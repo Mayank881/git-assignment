@@ -84,3 +84,23 @@ section:target {
   font-weight: normal;
   color: #1abc9c;
 }
+/* Styled the table to make it more readable and visually appealing */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+/* Header row has a different background color and centered text for better readability */
+table th {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+}
+/* table tr:nth is used to style every even row of the table with a different background color to improve readability */
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
