@@ -35,6 +35,8 @@ const students = [
     }
 ];
 
+// This function calculates total marks of a student by looping through subjects
+
 function getTotalMarks(student) {
   let total = 0;
 
@@ -47,5 +49,20 @@ function getTotalMarks(student) {
 students.forEach(s => {
   console.log(`${s.name} Total Marks: ${getTotalMarks(s)}`);
 });
+//
+// Printing total marks for each student 
+function getAverageMarks(student) {
+  let total = getTotalMarks(student);
+  return total / student.marks.length;
+}
 
-console.log("hello");   
+// I reused total marks function to calculate average marks by dividing total marks by number of subjects.
+function getAverageMarks(student) {
+  let total = getTotalMarks(student);
+  return total / student.marks.length;
+}
+console.log("\nAverage Marks:");
+// Printing average marks
+students.forEach(s => {
+  console.log(s.name + " Average:", getAverageMarks(s).toFixed(2));
+});
