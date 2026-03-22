@@ -144,50 +144,131 @@
     <hr>
     <section id="projects">
 
-    <h2>Projects</h2>
+        <h2>Projects</h2>
 
-    <!-- I used ordered list to show projects in structured sequence -->
-    <ol>
+        <!-- I used ordered list to show projects in structured sequence -->
+        <!--includes details about project like its teckstack and a short explanation-->
+        <ol>
 
-        <!-- Project 1 -->
-        <li>
-            <h3>Car Rental Website</h3>
+            <!-- Project 1 -->
+            <li>
+                <h3>Car Rental Website</h3>
 
-            <a href="https://github.com/Mayank881/car-rental-website" target="_blank">View Project</a>
+                <a href="https://github.com/Mayank881/car-rental-website" target="_blank">View Project</a>
 
-            <p>
-                <strong>Technologies Used:</strong> HTML, CSS, JavaScript
-            </p>
+                <p>
+                    <strong>Technologies Used:</strong> HTML, CSS, JavaScript
+                </p>
 
-            <ul>
-                <li>Developed a responsive car rental website with modern UI.</li>
-                <li>Implemented booking interface and vehicle listing features.</li>
-                <li>Focused on clean design and user-friendly navigation.</li>
-            </ul>
-        </li>
+                <ul>
+                    <li>Developed a responsive car rental website with modern UI.</li>
+                    <li>Implemented booking interface and vehicle listing features.</li>
+                    <li>Focused on clean design and user-friendly navigation.</li>
+                </ul>
+            </li>
 
-        <!-- Project 2 -->
-        <li>
-            <h3>PackBits -A Food Insight Web App</h3>
+            <!-- Project 2 -->
+            <li>
+                <h3>PackBits -A Food Insight Web App</h3>
 
-            <a href="https://github.com/Mayank881/PackBits" target="_blank">View Project</a>
+                <a href="https://github.com/Mayank881/PackBits" target="_blank">View Project</a>
 
-            <p>
-                <strong>Technologies Used:</strong> HTML, CSS, JavaScript, React.js, node.js, Express.js, MongoDB
-            </p>
+                <p>
+                    <strong>Technologies Used:</strong> HTML, CSS, JavaScript, React.js, node.js, Express.js, MongoDB
+                </p>
 
-            <ul>
-                <li>Built a system to analyze packaged food ingredients.</li>
-                <li>Provided health insights based on ingredient composition.</li>
-                <li>Suggested healthier alternatives for users.</li>
-            </ul>
-        </li>
+                <ul>
+                    <li>Built a system to analyze packaged food ingredients.</li>
+                    <li>Provided health insights based on ingredient composition.</li>
+                    <li>Suggested healthier alternatives for users.</li>
+                </ul>
+            </li>
 
-    </ol>
+        </ol>
+
+    </section>
+
+    <hr>
+
+    <section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>
+        I am always open to new opportunities and interesting projects. Feel free to connect with me!
+    </p>
+
+    <!-- I used form to collect user details for communication -->
+     <!--uses tags like input, label, textarea, etc. to create the form and collect user input-->
+    <form>
+
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <br><br>
+
+        <!-- Role -->
+        <label for="role">You are:</label>
+        <select id="role">
+            <option value="">Select</option>
+            <option value="recruiter">Recruiter</option>
+            <option value="client">Client</option>
+            <option value="student">Student</option>
+            <option value="other">Other</option>
+        </select>
+
+        <br><br>
+
+        <!-- Purpose -->
+        <label>Purpose:</label>
+        <input type="radio" name="purpose" value="hiring"> Hiring
+        <input type="radio" name="purpose" value="freelance"> Freelance
+        <input type="radio" name="purpose" value="collaboration"> Collaboration
+
+        <br><br>
+
+        <!-- Skills -->
+        <label>Skills Interested In:</label>
+        <input type="checkbox" name="skills" value="frontend"> Frontend
+        <input type="checkbox" name="skills" value="backend"> Backend
+        <input type="checkbox" name="skills" value="fullstack"> Full Stack
+
+        <br><br>
+
+        <!-- Message -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+
+    </form>
 
 </section>
 
 <hr>
+
+<footer>
+
+    <p>Mayank Kukraja</p>
+
+    <p>
+        <a href="https://github.com/Mayank881">GitHub</a> |
+        <a href="https://www.linkedin.com/in/mayank-kukraja">LinkedIn</a>
+    </p>
+
+</footer>
+
 
 
 
