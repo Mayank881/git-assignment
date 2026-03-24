@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Inventory Dashboard</title>
+
+  <!-- linking css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <!-- linking js -->
+    <script src="script.js"></script>
+  <!-- ===== HEADER ===== -->
+  <!-- main heading of dashboard -->
+  <h1>Product Inventory Dashboard</h1>
+
+
+  <!-- ===== CONTROLS ===== -->
+  <!-- user will search, filter and sort from here -->
+  <div class="controls">
+
+    <!-- search input -->
+    <input type="text" id="searchInput" placeholder="Search product">
+
+    <!-- category filter -->
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+      <option value="books">Books</option>
+      <option value="accessories">Accessories</option>
+    </select>
+
+    <!-- low stock filter -->
+    <label>
+      <input type="checkbox" id="lowStockFilter">
+      Low Stock (<5)
+    </label>
+
+    <!-- sorting -->
+    <select id="sortBy">
+      <option value="default">Sort</option>
+      <option value="low">Price Low → High</option>
+      <option value="high">Price High → Low</option>
+      <option value="az">Name A-Z</option>
+      <option value="za">Name Z-A</option>
+    </select>
+
+  </div>
+
+
+  <!-- ===== ANALYTICS ===== -->
+  <!-- this section will show summary -->
+  <div class="analytics">
+
+    <p>Total Products: <span id="totalProducts">0</span></p>
+    <p>Total Value: <span id="totalValue">₹0</span></p>
+    <p>Out of Stock: <span id="outOfStock">0</span></p>
+
+  </div>
+
+
+  <!-- ===== LOADING TEXT ===== -->
+  <!-- will show before data loads -->
+  <p id="loading">Loading products...</p>
+
+
+  <!-- ===== PRODUCT GRID ===== -->
+  <!-- products will be added here dynamically -->
+  <div id="productGrid"></div>
+
+
+  <!-- ===== ADD PRODUCT ===== -->
+  <h2>Add Product</h2>
+
+  <div class="form">
+
+    <!-- product name -->
+    <input id="name" placeholder="Product Name">
+
+    <!-- product price -->
+    <input id="price" type="number" placeholder="Price">
+
+    <!-- product stock -->
+    <input id="stock" type="number" placeholder="Stock">
+
+    <!-- product category -->
+    <select id="category">
+      <option value="">Select Category</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+      <option value="books">Books</option>
+      <option value="accessories">Accessories</option>
+    </select>
+
+    <!-- add button -->
+    <button onclick="addProduct()">Add Product</button>
+
+  </div>
+
+  <!-- linking js -->
+  <script src="script.js"></script>
+
+</body>
+</html>
